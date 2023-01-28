@@ -1,6 +1,7 @@
 const { Player } = require('discord-player');
 const { Client, GatewayIntentBits } = require('discord.js');
 
+
 global.client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -20,4 +21,6 @@ require('./src/loader');
 require('./src/events');
 
 client.login(client.config.app.token);
+
+
 
